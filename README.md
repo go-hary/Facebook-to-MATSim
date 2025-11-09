@@ -24,19 +24,24 @@ The Jupyter notebook (`MATSim_Syn_pop_genrator.ipynb`) performs the following st
 
 ---
 
+## Data Source
+
+The main input dataset used in this workflow is retrieved from [**Facebook Data for Good**](https://dataforgood.facebook.com/), particularly their **Movement Range Maps**.  
+These provide aggregated, privacy-preserving origin–destination (OD) metrics that capture mobility trends during both **business-as-usual** and **emergency** conditions.  
+Users are encouraged to explore the [Movement Range Data](https://dataforgood.facebook.com/tools/movement-range-maps) portal for methodological notes, coverage, and available time windows.
+
 ## Repository structure
 
-Facebook-to-MATSim/
-├── data/
-│   ├── 0.config.xml           # MATSim configuration file
-│   ├── population.xml         # Synthetic population plans
-│   ├── transitVehicles.xml    # Public transport vehicles
-│   ├── transitSchedule.xml    # Transit schedule (GTFS-based)
-│   └── scenario/              # Generated MATSim scenario folder
-│
-├── MATSim_Syn_pop_genrator.ipynb   # Main Jupyter notebook (converts Facebook Data for Good OD data → MATSim)
-├── LICENSE                          # MIT License
-└── README.md                        # Project documentation
+- **`data/`**  
+  - `0.config.xml` — MATSim configuration file  
+  - `population.xml` — Synthetic population plans  
+  - `transitVehicles.xml` — Public transport vehicles  
+  - `transitSchedule.xml` — Transit schedule (GTFS-based)  
+  - `scenario/` — Generated MATSim scenario folder  
+
+- **`MATSim_Syn_pop_genrator.ipynb`** — Main Jupyter notebook that converts [Facebook Data for Good](https://dataforgood.facebook.com/) OD data to MATSim inputs  
+- **`LICENSE`** — MIT license  
+- **`README.md`** — Project documentation
 
 ---
 
