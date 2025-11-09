@@ -24,11 +24,30 @@ The Jupyter notebook (`MATSim_Syn_pop_genrator.ipynb`) performs the following st
 
 ---
 
-## Data Source
+##  Data Sources
 
-The main input dataset used in this workflow is retrieved from [**Facebook Data for Good**](https://dataforgood.facebook.com/), particularly their **Movement Range Maps**.  
-These provide aggregated, privacy-preserving origin–destination (OD) metrics that capture mobility trends during both **business-as-usual** and **emergency** conditions.  
-Users are encouraged to explore the [Movement Range Data](https://dataforgood.facebook.com/tools/movement-range-maps) portal for methodological notes, coverage, and available time windows.
+### 1. [Facebook Data for Good](https://dataforgood.facebook.com/)
+
+The main input dataset for population movement is retrieved from **Facebook’s Data for Good** initiative, specifically the **Movement Range Maps**.  
+These provide aggregated and privacy-preserving origin–destination (OD) metrics derived from anonymized user mobility patterns.  
+They describe travel flows under both **baseline** and **n_crisis** conditions and allow researchers to infer city-wide travel behavior where official data is limited.  
+You can explore and download the dataset and related documentation here:  
+[https://dataforgood.facebook.com/tools/movement-range-maps](https://dataforgood.facebook.com/tools/movement-range-maps)
+
+---
+
+### 2. [OpenStreetMap + JOSM-MATSim Plugin](https://github.com/matsim-org/josm-matsim-plugin)
+
+The street network used for routing and simulation was built from **OpenStreetMap (OSM)** data.  
+The data was processed using the **[JOSM-MATSim Plugin](https://github.com/matsim-org/josm-matsim-plugin)** — an official extension for the JOSM editor that converts OSM geometries (nodes and ways) into MATSim-compatible network files (`network.xml`).  
+The plugin enables:
+- Importing and visualizing OSM data directly in JOSM.  
+- Assigning transport modes, capacities, and speeds to OSM links.  
+- Exporting the processed data as a valid **MATSim network** (nodes, links, and optionally public transport facilities).
+
+In this project, the MATSim network derived from OpenStreetMap was **enriched with OD flows** from the Facebook dataset to create a data-driven scenario for Alexandria.
+
+Users are encouraged to explore the [Movement Range Data]([[https://dataforgood.facebook.com/tools/movement-range-maps](https://dataforgood.facebook.com/dfg/tools/movement-distribution-maps)](https://dataforgood.facebook.com/dfg/tools/movement-distribution-maps)) portal for methodological notes, coverage, and available time windows.
 
 ## Repository structure
 
