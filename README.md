@@ -26,16 +26,17 @@ The Jupyter notebook (`MATSim_Syn_pop_genrator.ipynb`) performs the following st
 
 ## Repository structure
 
+Facebook-to-MATSim/
 ├── data/
-│ ├── 0.config.xml # MATSim configuration file
-│ ├── population.xml # Synthetic population plans
-│ ├── transitVehicles.xml # Public transport vehicles
-│ ├── transitSchedule.xml # Transit schedule (GTFS-like based)
-│ └── scenario/ # Generated scenario folder
+│   ├── 0.config.xml           # MATSim configuration file
+│   ├── population.xml         # Synthetic population plans
+│   ├── transitVehicles.xml    # Public transport vehicles
+│   ├── transitSchedule.xml    # Transit schedule (GTFS-based)
+│   └── scenario/              # Generated MATSim scenario folder
 │
-├── MATSim_Syn_pop_genrator.ipynb # Main Jupyter notebook that converts [Facebook's data for good ](https://dataforgood.facebook.com/) to MATSim files
-├── LICENSE # MIT License
-└── README.md # Project documentation
+├── MATSim_Syn_pop_genrator.ipynb   # Main Jupyter notebook (converts Facebook Data for Good OD data → MATSim)
+├── LICENSE                          # MIT License
+└── README.md                        # Project documentation
 
 ---
 
