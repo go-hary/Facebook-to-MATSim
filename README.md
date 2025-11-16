@@ -24,15 +24,23 @@ The Jupyter notebook (`MATSim_Syn_pop_genrator.ipynb`) performs the following st
 
 ---
 
-##  Data Sources
-
-### 1. [Facebook Data for Good](https://dataforgood.facebook.com/)
+### 1. Facebook Data for Good
 
 The main input dataset for population movement is retrieved from **Facebook’s Data for Good** initiative, specifically the **Movement Range Maps**.  
-These provide aggregated and privacy-preserving origin–destination (OD) metrics derived from anonymized user mobility patterns.  
-They describe travel flows under both **baseline** and **n_crisis** conditions and allow researchers to infer city-wide travel behavior where official data is limited.  
-You can explore and download the dataset and related documentation here:  
-[Movement Range Data]([[https://dataforgood.facebook.com/tools/movement-range-maps](https://dataforgood.facebook.com/dfg/tools/movement-distribution-maps)](https://dataforgood.facebook.com/dfg/tools/movement-distribution-maps)) portal...
+These provide aggregated and privacy-preserving origin–destination (OD) metrics derived from anonymized user mobility patterns.
+
+The dataset describes travel flows under both **baseline** and **n_crisis** conditions and allows researchers to infer city-wide travel behavior where official mobility data is limited.
+
+You can explore and download the dataset and related documentation here:
+
+🔗 **Movement Range Maps**  
+https://dataforgood.facebook.com/dfg/tools/movement-maps
+
+Users are also encouraged to review methodological notes and data coverage here:
+
+🔗 **Movement Distribution Maps**  
+https://dataforgood.facebook.com/dfg/tools/movement-distribution-maps
+
 ---
 
 ### 2. [OpenStreetMap + JOSM-MATSim Plugin](https://github.com/matsim-org/josm-matsim-plugin)
